@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2491097",
+      "name": "课程",
+      "font_class": "kecheng",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "12777646",
+      "name": "学校",
+      "font_class": "xuexiao",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "17122313",
+      "name": "展览",
+      "font_class": "zhanlan",
+      "unicode": "e70e",
+      "unicode_decimal": 59150
+    }
+  ]
+}

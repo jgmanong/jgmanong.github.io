@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'nav-font';
+    font-display: swap;
+    src: url('font/nav-font/webfont.eot'); /* IE9 */
+    src: url('font/nav-font/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('font/nav-font/webfont.woff2') format('woff2'),
+    url('font/nav-font/webfont.woff') format('woff'), /* chrome、firefox */
+    url('font/nav-font/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('font/nav-font/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+.nav-font {
+    font-family: "nav-font" !important;
+    font-size: 18px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'stu-font';
+    font-display: swap;
+    src: url('font/stu-font/webfont.eot'); /* IE9 */
+    src: url('font/stu-font/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('font/stu-font/webfont.woff2') format('woff2'),
+    url('font/stu-font/webfont.woff') format('woff'), /* chrome、firefox */
+    url('font/stu-font/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('font/stu-font/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+.stu-font {
+    font-family: "stu-font" !important;
+    font-size: 20px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('icon/iconfont.ttf?t=1639389309464') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 10px;
+}
+
+body {
+	margin: 0;
+	background-image: url(img/texture.png);
+	background-attachment: fixed;
+}
+
+nav {
+	display: table;
+	width: 100%;
+	box-shadow: 0 5px 10px dimgrey;
+	position: fixed;
+	z-index: 10;
+}
+
+nav a {
+	display: table-cell;
+	text-align: center;
+	text-decoration: none;
+	font-size: 24px;
+	padding: 20px 0;
+	color: #fff;
+}
+
+nav a:nth-child(1) {background-color: black;}
+nav a:nth-child(2) {background-color: purple;}
+nav a:nth-child(3) {background-color: darkseagreen;}
+
+img {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -200px;
+	width: 400px;
+}
+
+.students {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	text-align: center;
+	background-color: #fff;
+	font-size: 0;
+}
+
+.name {
+	display: inline-block;
+	height: 100px;
+	background-color: lightgrey;
+	line-height: 100px;
+	width: 12.5%;
+	font-size: 14px;
+	border: 2px solid white;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+.students a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.female:hover {
+	background-color: hotpink;
+	transition: .5s;
+	color: #000;
+}
+
+.male:hover {
+	background-color: cornflowerblue;
+	transition: .5s;
+	color: #000;
+}
+
+@media only screen and (max-width: 1200px) {
+	.name {
+		width: 25%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.name {
+		width: 50%;
+	}
+	img {
+		width: 300px;
+		margin-top: -150px;
+		margin-left: -150px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.name {
+		width: 100%;
+	}
+	img {
+		width: 200px;
+		margin-top: -100px;
+		margin-left: -100px;
+	}
+}
