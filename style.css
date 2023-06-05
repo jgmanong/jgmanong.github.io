@@ -1,0 +1,155 @@
+@font-face {
+	font-family: webfont;
+	src: url(links/font/Alimama_ShuHeiTi_Bold.ttf);
+}
+
+body {
+	margin: 0;
+	background-image: url(links/img/bg-img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+nav {
+	display: table;
+	width: 100%;
+	height: 50px;
+}
+
+nav a {
+	display: table-cell;
+	text-align: center;
+	text-decoration: none;
+	font-size: 24px;
+	line-height: 50px;
+	color: #fff;
+	font-family: webfont;
+}
+
+nav a:nth-child(1) {
+	background-color: blue;
+}
+
+nav a:nth-child(2) {
+	background-color: mediumpurple;
+}
+
+nav a:nth-child(3) {
+	background-color: magenta;
+}
+
+.iconfont {
+	font-size: 24px;
+}
+
+.image {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+	background-color: #000;
+	border-radius: 50%;
+	transition: .5s;
+}
+
+.image:hover {
+	background-color: #fff;
+	box-shadow: 0 0 20px 20px #fff;
+	transform: rotate(360deg);
+	transition: .5s;
+}
+
+img {
+	width: 300px;
+}
+
+.students {
+	position: absolute;
+	top: 100%;
+	background-color: lightgray;
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+	font-family: sans-serif;
+}
+
+.students a {
+	color: #000;
+}
+
+.name {
+	display: inline-block;
+	width: 16.5%;
+	font-size: 14px;
+	height: 100px;
+	line-height: 100px;
+	overflow: hidden;
+	transition: .5s;
+	border-radius: 5px;
+}
+
+.name:hover {
+	font-size: 36px;
+	color: #fff;
+	transition: .5s;
+}
+
+.female:hover {
+	background-color: hotpink;
+}
+
+.male:hover {
+	background-color: cornflowerblue;
+}
+
+/***************以下为响应式部分***************/
+
+@media only screen and (max-width: 1200px) {
+	.name {
+		width: 25%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.name {
+		width: 33.3%;
+	}
+	.image {
+		margin-left: -100px;
+		margin-top: -100px;
+	}
+	img {
+		width: 200px;
+	}
+	nav a {
+		font-size: 18px;
+	}
+	.iconfont {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.name {
+		width: 50%;
+	}
+	nav a {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.name {
+		width: 100%;
+	}
+}
