@@ -1,0 +1,169 @@
+@font-face {
+	font-family: navigation;
+	src: url(font/alimama/Q6YNtDHLIMeS.woff2);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: navigation;
+	src: url(font/alimama/Q6YNtDHLIMeS.woff);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: student;
+	src: url(font/smiley/rHmpIdNPrUbw.woff2);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: student;
+	src: url(font/smiley/rHmpIdNPrUbw.woff);
+	font-display: swap;
+}
+
+body {
+	margin: 0;
+	background-image: url(img/bg-img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+nav {
+	display: table;
+	width: 100%;
+	height: 50px;
+}
+
+nav a {
+	display: table-cell;
+	text-align: center;
+	text-decoration: none;
+	font-size: 24px;
+	color: #fff;
+	line-height: 50px;
+	font-family: navigation;
+}
+
+nav a:nth-child(1) {
+	background-color: blueviolet;
+}
+
+nav a:nth-child(2) {
+	background-color: mediumpurple;
+}
+
+nav a:nth-child(3) {
+	background-color: magenta;
+}
+
+.iconfont {
+	font-size: 24px;
+}
+
+.picture {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -150px;
+	background-color: #000;
+	border-radius: 50%;
+	transition: .5s;
+}
+
+.picture:hover {
+	background-color: #fff;
+	box-shadow: 0 0 20px 20px #fff;
+	transform: rotate(360deg);
+	transition: .5s;
+}
+
+img {
+	width: 300px;
+}
+
+.students {
+	position: absolute;
+	top: 100%;
+	background-color: lightgray;
+	text-align: center;
+	width: 100%;
+	font-size: 0;
+	font-family: student;
+}
+
+.students a {
+	text-decoration: none;
+}
+
+.name {
+	color: #000;
+	display: inline-block;
+	width: 20%;
+	font-size: 1rem;
+	height: 100px;
+	line-height: 100px;
+	border-radius: 5px;
+	overflow: hidden;
+	transition: .5s;
+}
+
+.name:hover {
+	font-size: 60px;
+	color: #fff;
+	transition: .5s;
+}
+
+.female:hover {
+	background-color: hotpink;
+}
+
+.male:hover {
+	background-color: cornflowerblue;
+}
+
+/**********以下为响应式部分**********/
+
+@media only screen and (max-width: 1200px) {
+	.name {
+		width: 25%;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.name {
+		width: 33.333333%;
+	}
+	.iconfont,nav a {
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.name {
+		width: 50%;
+	}
+	.picture {
+		margin-left: -100px;
+		margin-top: -100px;
+	}
+	img {
+		width: 200px;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.name {
+		width: 100%;
+	}
+	nav a {
+		display: block;
+	}
+}
